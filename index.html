@@ -7,36 +7,57 @@
     <title>Message</title>
 
     <style>
-body{
-    margin: 10px;
-}
-textarea{
-    width: 100%;
-    height: 100px;
-    padding: 5px;
-    box-sizing: border-box ;
-}
-.counter{
-    margin-top: 10px;
+        body {
+            margin: 10px;
+          
 
-}
-.warning{
-    margin-top: 10px;
-    color: red;
-    display: none;
-}
+        }
 
+        textarea {
+            width: 50%;
+            height: 150px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
 
+        .container {
+            margin: 0 auto;
+            text-align: center;
+            background-color: whitesmoke;
+            object-fit: contain;
+            padding: 40px;
+          
+    
+
+        }
+
+        .counter {
+            margin-top: 10px;
+
+        }
+
+        h1 {
+            color: brown;
+
+        }
+
+        .warning {
+            margin-top: 10px;
+            color: red;
+            display: none;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Message box</h1>
-    <p>Max Character 200</p>
-    <textarea name="textarea" maxlength="200"  id="textContent" placeholder="Type Your Message here...."></textarea>
-    <div class="counter" id="charCounter">0/200 characters</div>
-    <div class="warning" id="warningMsg">Character limit reached!</div>
+    <div class="container">
+        <h1>Message box</h1>
+        <h3>Max Character 200</h3>
+        <textarea name="textarea" maxlength="200" id="textContent" placeholder="Type Your Message here...."></textarea>
+        <div class="counter" id="charCounter">0/200 characters</div>
+        <div class="warning" id="warningMsg">Character limit reached!</div>
 
+    </div>
     <script>
         var textarea = document.getElementById("textContent")
         var counter = document.getElementById("charCounter")
